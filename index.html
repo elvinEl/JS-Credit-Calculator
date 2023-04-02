@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <h3>Kredit Hesablama</h3>
+      <label for="">Məbləğ</label>
+      <input id="required_amount" type="text" /><br/><br/>
+
+      <label for="">Zaman</label>
+      <select id="time_interval">
+        <option value="12">12 ay</option>
+        <option value="24">24 ay</option>
+        <option value="36">36 ay</option>
+        <option value="48">48 ay</option>
+      </select><br/><br/>
+      <input onclick="creditCalculate()" type="button" value="Hesabla">
+
+      <h3 id="section"></h3>
+    </form>
+
+    <script src="main.js"></script>
+  </body>
+</html>
